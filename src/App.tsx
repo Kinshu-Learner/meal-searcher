@@ -1,12 +1,13 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import ShopByCat from "./components/ShopByCat";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <div className="h-[10000px]"></div>
+      <ShopByCat />
     </>
   );
 }
