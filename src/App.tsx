@@ -5,10 +5,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="max-lg:hidden">
-
-        <Hero />
-      </div>
+      <Hero />
       <div className="h-[10000px]"></div>
     </>
   );

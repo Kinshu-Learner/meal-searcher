@@ -138,8 +138,8 @@ const Navbar = () => {
           {showNav && <FaTimes size={20} className="m-2" />}
         </div>
 
-        <div className={`absolute p-2 justify-center items-center flex flex-col w-full bg-stone-200 bg-opacity-30 ${showNav ? "translate-y-20" : "-translate-y-60"} duration-300`}>
-          <div className="flex gap-4 font-medium lg:hidden">
+        <div className={`absolute justify-center items-center flex flex-col w-full bg-stone-100 bg-opacity-90 ${showNav ? "translate-y-16" : "-translate-y-60"} duration-300`}>
+          <div className="flex pt-2 gap-4 font-medium lg:hidden">
             <div
               onClick={() => {
                 setShowHome(!showHome);
@@ -221,7 +221,7 @@ const Navbar = () => {
             Connect with us <FaArrowRight className="mt-1" />
           </a>
 
-          <div className="flex lg:hidden pb-4">
+          <div className="flex lg:hidden pb-6">
             <div className="rounded-full p-3 bg-lime-700 hover:bg-lime-600 bg-opacity-70 cursor-pointer duration-200 hover:bg-opacity-70 text-white mx-1">
               <CiSearch size={20} />
             </div>
