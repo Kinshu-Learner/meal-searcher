@@ -7,7 +7,7 @@ const ShopByCat = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const data = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef`);
+            const data = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian`);
             const response = await data.json();
             setDataFetched(response);
         };
@@ -32,7 +32,7 @@ const ShopByCat = () => {
                 <div className="text-3xl font-semibold text-center font-libre py-3 px-2">Top Category of Organic Food</div>
 
                 <div className="flex flex-wrap gap-3 font-medium p-2">
-                    <button onClick={() => handleClick("Beef")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">BEEF</button>
+                    <button onClick={() => handleClick("Vegetarian")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">VEGETARIAN</button>
                     <button onClick={() => handleClick("Chicken")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">CHICKEN</button>
                     <button onClick={() => handleClick("Dessert")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">DESSERT</button>
                     <button onClick={() => handleClick("Pasta")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">PASTA</button>
