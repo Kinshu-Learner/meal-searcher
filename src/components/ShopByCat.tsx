@@ -27,20 +27,20 @@ const ShopByCat = () => {
         <div className="flex justify-center w-full">
 
             <div className="max-w-screen-2xl w-full flex flex-col justify-center items-center">
-                <div className="h-[90vh]"></div>
+                <div className="h-[94vh]"></div>
                 <div className="2xl:pt-2 font-bold text-xl">Shop by Category</div>
-                <div className="text-3xl font-semibold font-libre py-3">Top Category of Organic Food</div>
+                <div className="text-3xl font-semibold text-center font-libre py-3 px-2">Top Category of Organic Food</div>
 
-                <div className="flex gap-3 font-medium py-2">
-                    <div onClick={() => handleClick("Beef")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">BEEF</div>
-                    <div onClick={() => handleClick("Chicken")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">CHICKEN</div>
-                    <div onClick={() => handleClick("Dessert")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">DESSERT</div>
-                    <div onClick={() => handleClick("Pasta")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">PASTA</div>
-                    <div onClick={() => handleClick("Seafood")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">SEAFOOD</div>
-                    <div onClick={() => handleClick("Starter")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">STARTER</div>
+                <div className="flex flex-wrap gap-3 font-medium p-2">
+                    <button onClick={() => handleClick("Beef")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">BEEF</button>
+                    <button onClick={() => handleClick("Chicken")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">CHICKEN</button>
+                    <button onClick={() => handleClick("Dessert")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">DESSERT</button>
+                    <button onClick={() => handleClick("Pasta")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">PASTA</button>
+                    <button onClick={() => handleClick("Seafood")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">SEAFOOD</button>
+                    <button onClick={() => handleClick("Starter")} className="px-7 bg-stone-200 rounded-full py-1 hover:bg-lime-900 hover:text-stone-200 duration-200 cursor-pointer focus:bg-lime-900 focus:text-stone-200">STARTER</button>
                 </div>
 
-                <div className="grid grid-cols-2 gap-5 py-10 gap-x-20 max-xl:grid-cols-1 px-4 ">
+                <div className="grid grid-cols-2 gap-5 py-10 gap-x-20 max-xl:grid-cols-1 px-4 max-lg:px-2">
                     {DataFetched && DataFetched.meals.map((meal: any) => (
                         <MealCard key={meal.idMeal} strMeal={meal.strMeal} strMealThumb={meal.strMealThumb} />
                     ))}

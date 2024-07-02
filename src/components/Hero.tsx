@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <div className="absolute w-full h-screen items-center flex top-0 max-lg:overflow-hidden">
+        <div className="absolute w-full h-screen items-center flex top-0 max-xl:overflow-hidden">
 
             <div className="h-full w-full flex max-lg:flex-col">
                 <div className="bg-stone-100 w-[60%] max-lg:w-full max-lg:h-[60%] h-full"></div>
@@ -21,7 +21,7 @@ const Hero = () => {
 
                 <div className="flex max-lg:flex-col max-lg:gap-4">
 
-                    <div className="flex items-center p-2 gap-2 rounded-full bg-lime-800 text-white px-5 font-medium cursor-pointer hover:bg-lime-700 duration-200 max-lg:w-fit max-lg:text-lime-800 max-lg:bg-stone-100 max-lg:hover:bg-stone-300">SHOP NOW <FaArrowRight size={14} /></div>
+                    <div className="flex items-center p-2 gap-2 rounded-full bg-lime-800 text-white px-5 font-medium cursor-pointer hover:bg-lime-700 duration-200 max-lg:w-fit max-lg:text-lime-800 max-lg:bg-stone-100 max-lg:hover:bg-stone-300 max-lg:border-2 border-lime-800">SHOP NOW <FaArrowRight size={14} /></div>
 
                     <div className="flex max-lg:text-stone-200">
 
